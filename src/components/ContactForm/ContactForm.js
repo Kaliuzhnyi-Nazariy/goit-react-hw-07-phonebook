@@ -37,7 +37,7 @@ export const ContactForm = () => {
         onSubmit={(values, actions) => {
           const newContact = {
             name: values.name,
-            number: values.number,
+            phone: values.number,
           };
 
           if (

@@ -1,6 +1,4 @@
-
 import { ContactList } from './ContactList/ContactList';
-
 import { ContactForm } from './ContactForm/ContactForm.js';
 import { ContactFilter } from './Filter/Filter';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,7 +11,6 @@ export const App = () => {
   const isLoading = useSelector(selectIsLoading)
   const isError = useSelector(selectError)
 
-  // console.log(isLoading)
 
   useEffect(() => {
     dispatch(fetchContacts())
